@@ -2,6 +2,8 @@
 user_input = True
 while user_input != '/exit':
     user_input = input()
+    if user_input == '/help':
+        print('The program calculates the sum of numbers')
     if user_input != '/exit':
         values = list(map(int, user_input.split()))
         if len(values) == 1:

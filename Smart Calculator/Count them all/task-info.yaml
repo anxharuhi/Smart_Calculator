@@ -136,6 +136,21 @@ files:
     if __name__ == '__main__':
         CalcTest("calculator.calculator").run_tests()
   learner_created: false
+- name: calculator/calculator.py
+  visible: true
+  text: |-
+    # write your code here
+    user_input = True
+    while user_input != '/exit':
+        user_input = input()
+        if user_input != '/exit':
+            values = list(map(int, user_input.split()))
+            if len(values) == 1:
+                print(values[0])
+            elif len(values) == 2:
+                print(values[0] + values[1])
+    print('Bye!')
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/74/stages/411/implement
 status: Unchecked
 record: -1
