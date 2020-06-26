@@ -4,10 +4,13 @@ while user_input != '/exit':
     user_input = input()
     if user_input == '/help':
         print('The program calculates the sum of numbers')
-    if user_input != '/exit':
-        values = list(map(int, user_input.split()))
-        if len(values) == 1:
-            print(values[0])
-        elif len(values) == 2:
-            print(values[0] + values[1])
-print('Bye!')
+    elif user_input == '':
+        pass
+    elif user_input != '/exit':
+        values = list(map(int, user_input.split(' ')))
+        result = 0
+        for number in values:
+            result += number
+        print(result)
+    else:
+        print('Bye!')
