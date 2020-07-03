@@ -1,6 +1,7 @@
 # write your code here
-
 class Calculator:
+    commands = {'/help': 'The program calculates the sum of numbers',
+                '/exit': 'Bye!'}
 
     def __init__(self, user_input=None):
         self.user_input = user_input
@@ -10,10 +11,10 @@ class Calculator:
 
     def logic(self, input):
         self.user_input = input
-        if self.user_input == '/help':
-            print('The program calculates the sum of numbers')
-        elif self.user_input == '':
+        if self.user_input == '':
             pass
+        elif self.user_input in self.commands.keys():
+            print(self.commands[self.user_input])
         elif self.user_input != '/exit':
             values = list(self.user_input.split(' '))
             result = 0
@@ -21,14 +22,15 @@ class Calculator:
                 if number == '+':
                     pass
                 else:
-                    result += int(number)
-            print(result)
-        else:
-            print('Bye!')
+                    try:
+                        result += int(number)
+                    except:
+                        result = None
+            if result is not None:
+                print(result)
 
     def simplify_operations(self):
         pass
-
 
 
 if __name__ == '__main__':
