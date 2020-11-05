@@ -1,6 +1,26 @@
 type: edu
 custom_name: stage4
 files:
+- name: calculator/calculator.py
+  visible: true
+  text: |-
+    # write your code here
+    user_input = True
+    while user_input != '/exit':
+        user_input = input()
+        if user_input == '/help':
+            print('The program calculates the sum of numbers')
+        elif user_input == '':
+            pass
+        elif user_input != '/exit':
+            values = list(map(int, user_input.split(' ')))
+            result = 0
+            for number in values:
+                result += number
+            print(result)
+        else:
+            print('Bye!')
+  learner_created: false
 - name: tests.py
   visible: false
   text: |
@@ -136,13 +156,6 @@ files:
     if __name__ == '__main__':
         CalcTest("calculator.calculator").run_tests()
   learner_created: false
-- name: calculator/calculator.py
-  visible: true
-  learner_created: true
-feedback_link: https://hyperskill.org/projects/74/stages/412/implement
+feedback_link: https://hyperskill.org/projects/74/stages/412/implement#comment
 status: Solved
-feedback:
-  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/74/stages/412/implement">JetBrains
-    Academy</a>
-  time: Sat, 15 Aug 2020 17:51:11 UTC
-record: 4
+record: 3
