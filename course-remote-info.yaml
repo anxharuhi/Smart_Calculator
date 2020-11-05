@@ -3,21 +3,29 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/240846/additional_files.json
   is_template_based: false
   use_ide: true
+update_date: Thu, 05 Nov 2020 15:35:36 UTC
 stages:
 - id: 409
   step: 6590
+  is_completed: true
 - id: 410
   step: 6591
+  is_completed: true
 - id: 411
   step: 6592
+  is_completed: true
 - id: 412
   step: 6593
+  is_completed: true
 - id: 413
   step: 6594
+  is_completed: true
 - id: 414
   step: 6595
+  is_completed: false
 - id: 415
   step: 6596
+  is_completed: false
 topics:
   0:
   - title: Introduction to Python
@@ -30,40 +38,40 @@ topics:
     theory_id: 5879
   - title: Comments
     theory_id: 6081
-  - title: Basic data types
-    theory_id: 5852
-  - title: Quotes and multi-line strings
-    theory_id: 5814
-  - title: Variables
-    theory_id: 5859
-  - title: Integer arithmetic
-    theory_id: 5865
-  - title: Type casting
-    theory_id: 6224
-  - title: Escape sequences
-    theory_id: 7130
   - title: Naming variables
     theory_id: 5885
   - title: Taking input
     theory_id: 5913
   - title: Program with numbers
     theory_id: 5872
-  - title: Comparisons
-    theory_id: 5920
   - title: List
     theory_id: 5979
   - title: Invoking a function
     theory_id: 5891
-  - title: Basic string methods
-    theory_id: 6842
   - title: If statement
     theory_id: 5953
   - title: For loop
     theory_id: 6065
-  - title: Split and join
-    theory_id: 6972
+  - title: Basic data types
+    theory_id: 5852
+  - title: Integer arithmetic
+    theory_id: 5865
+  - title: Quotes and multi-line strings
+    theory_id: 5814
+  - title: Escape sequences
+    theory_id: 7130
+  - title: Variables
+    theory_id: 5859
+  - title: Type casting
+    theory_id: 6224
   - title: Boolean logic
     theory_id: 6025
+  - title: Comparisons
+    theory_id: 5920
+  - title: Basic string methods
+    theory_id: 6842
+  - title: Split and join
+    theory_id: 6972
   1:
   - title: Indexes
     theory_id: 6189
@@ -85,20 +93,18 @@ topics:
   - title: List comprehension
     theory_id: 6315
   3:
-  - title: Computer programming
-    theory_id: 8739
   - title: Intro to computational thinking
     theory_id: 8742
   - title: Components of computational thinking
     theory_id: 8745
   - title: IDE
-    theory_id: 3805
+    theory_id: 10996
   - title: Functional decomposition
     theory_id: 9571
-  - title: Search in a string
-    theory_id: 9558
   - title: PyCharm basics
     theory_id: 6193
+  - title: Search in a string
+    theory_id: 9558
   4:
   - title: Program execution
     theory_id: 6047
@@ -121,8 +127,6 @@ topics:
     theory_id: 4991
   - title: Data structures
     theory_id: 5161
-  - title: String formatting
-    theory_id: 6037
   - title: Dictionary
     theory_id: 6481
   - title: Set
@@ -131,12 +135,10 @@ topics:
     theory_id: 7462
   - title: Scopes
     theory_id: 6322
-  - title: Identity testing
-    theory_id: 8077
-  - title: Operations with dictionary
+  - title: Dictionary methods
     theory_id: 9008
-  - title: Objects in Python
-    theory_id: 9262
+  - title: Operations with dictionary
+    theory_id: 11096
   - title: Default arguments
     theory_id: 10295
   - title: Args
@@ -159,6 +161,12 @@ topics:
     theory_id: 9831
   - title: Hash table
     theory_id: 5364
+  - title: String formatting
+    theory_id: 6037
+  - title: Identity testing
+    theory_id: 8077
+  - title: Objects in Python
+    theory_id: 9262
   - title: Hashable
     theory_id: 7823
   6:

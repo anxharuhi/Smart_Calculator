@@ -1,6 +1,21 @@
 type: edu
 custom_name: stage3
 files:
+- name: calculator/calculator.py
+  visible: true
+  text: |-
+    # write your code here
+    user_input = True
+    while user_input != '/exit':
+        user_input = input()
+        if user_input != '/exit':
+            values = list(map(int, user_input.split()))
+            if len(values) == 1:
+                print(values[0])
+            elif len(values) == 2:
+                print(values[0] + values[1])
+    print('Bye!')
+  learner_created: false
 - name: tests.py
   visible: false
   text: |
@@ -136,25 +151,6 @@ files:
     if __name__ == '__main__':
         CalcTest("calculator.calculator").run_tests()
   learner_created: false
-- name: calculator/calculator.py
-  visible: true
-  text: |-
-    # write your code here
-    user_input = True
-    while user_input != '/exit':
-        user_input = input()
-        if user_input != '/exit':
-            values = list(map(int, user_input.split()))
-            if len(values) == 1:
-                print(values[0])
-            elif len(values) == 2:
-                print(values[0] + values[1])
-    print('Bye!')
-  learner_created: true
-feedback_link: https://hyperskill.org/projects/74/stages/411/implement
+feedback_link: https://hyperskill.org/projects/74/stages/411/implement#comment
 status: Solved
-feedback:
-  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/74/stages/411/implement">JetBrains
-    Academy</a>
-  time: Fri, 26 Jun 2020 17:22:49 UTC
-record: 5
+record: 2
